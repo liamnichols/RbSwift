@@ -6,9 +6,16 @@
 //  Copyright © 2017 draveness. All rights reserved.
 //
 
+import Foundation
 import Quick
 import Nimble
 import RbSwift
+
+extension Date {
+    init(str: String) {
+        self = Date()
+    }
+}
 
 class DateBoolSpec: BaseSpec {
     override func spec() {

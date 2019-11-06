@@ -6,7 +6,7 @@
 //  Copyright © 2017 draveness. All rights reserved.
 //
 
-
+import Foundation
 import Quick
 import Nimble
 import RbSwift
