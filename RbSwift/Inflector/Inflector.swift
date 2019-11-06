@@ -68,7 +68,7 @@ class Inflector {
             return string
         } else {
             for rule in rules {
-                let range = NSMakeRange(0, string.length)
+                let range = NSMakeRange(0, string.count)
                 let regex: NSRegularExpression = try! NSRegularExpression(pattern: rule.rule, options: .caseInsensitive)
                 if let _ = regex.firstMatch(in: string, options: [], range: range) {
                     return regex.stringByReplacingMatches(in: string, options: [], range: range, withTemplate: rule.replacement)
